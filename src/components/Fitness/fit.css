@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .gender-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header1 {
+    margin-bottom: 20px;
+  }
+  
+  .header1  span {
+    color:#55E6A5;
+    font-size: 14px;
+  }
+  
+  .header1 h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .header1 p {
+    color: #6c757d;
+  }
+  
+  .gender-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .gender-card {
+    text-align: center;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  border-radius: 10px;
+  }
+  
+  .gender-card img {
+    width: 250px;
+    height: 400px;
+    
+  }
+  
+  .gender-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .gender-card.selected {
+    box-shadow: 0px 0px 15px 5px rgba(0, 123, 255, 0.6);
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 15px;
+  }
+  .gender-card:hover {
+    transform: scale(1.05);
+  }
+  .other-option {
+    margin-top: 30px 0;
+    color: #343a40;
+  }
+
+.next {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #55E6A5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+} 
+
+@media screen and (max-width: 768px) {
+  .header1 h2 {
+    font-size: 20px;
+  }
+
+  .gender-card img {
+    width: 157px;
+    height: auto; 
+  }
+
+  .gender-card p {
+    font-size: 16px;
+  }
+  .other-option {
+    margin-top: 38px;
+    color: #343a40;
+}
+
+  .next {
+    width: 15%;
+    margin-top: 37px; 
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header1 h2 {
+    font-size: 18px;
+  }
+
+  .gender-card img {
+    width: 128px;
+    height: auto; 
+  }
+
+  .gender-card p {
+    font-size: 14px;
+  }
+  .other-option {
+    margin-top: 66px;
+    color: #343a40;
+}
+
+
+  .next1 {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header1 h2 {
+    font-size: 16px;
+  }
+  .gender-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 64px 0;
+}
+
+  .gender-card img {
+    width: 160px;
+    height: auto; 
+  }
+
+  .gender-card p {
+    font-size: 13px;
+  }
+
+  .next {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header1 h2 {
+    font-size: 14px;
+  }
+
+  .gender-card img {
+    width: 109px;
+    height: auto; 
+  }
+
+  .gender-card p {
+    font-size: 12px;
+  }
+  .other-option {
+    margin-top: 83px;
+    color: #343a40;
+}
+
+  .next {
+    padding: 8px;
+    font-size: 12px;
+  }
+}

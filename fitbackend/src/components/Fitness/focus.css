@@ -1,0 +1,167 @@
+body{
+  background-color: black;
+}
+.focus-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center;
+}
+
+.header2 {
+  margin-bottom: 50px;
+  color: white;
+}
+
+.focus-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; 
+}
+
+.focus-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.focus-option {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
+}
+
+.focus-option:hover,
+.focus-option.selected {
+  background-color: #55E6A5;
+  color: white;
+}
+
+.focus-image {
+  position: relative;
+}
+
+.body-image {
+  width: 250px;
+}
+
+.nextsss {
+  margin-top: 50px;
+  padding: 10px 20px;
+  background-color: #55E6A5;
+  color: white;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.buttonss {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+  gap: 1300px;
+}
+
+.backsss {
+  margin-top: 50px;
+  padding: 10px 20px;
+  background-color:#55E6A5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.backsss:hover {
+  background-color: #d32f2f;
+}
+
+@media screen and (max-width: 768px) {
+  .focus-content {
+    flex-direction: row;
+    gap: 30px; 
+  }
+
+  .body-image {
+    width: 200px;
+  }
+
+  .header2 {
+    margin-bottom: 30px; 
+  }
+  .nextsss, .backsss {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  
+  .buttonss {
+    gap: 176px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .focus-content {
+    gap: 20px; 
+  }
+
+  .body-image {
+    width: 150px; 
+  }
+
+  .header2 {
+    margin-bottom: 20px; 
+    font-size: 18px; 
+  }
+
+  .nextsss {
+    font-size: 14px;
+    padding: 8px 16px; 
+  }
+  .buttonss {
+    gap: 176px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    font-size: 16px;
+  }
+
+  .focus-option {
+    padding: 8px 16px; 
+  }
+
+  .nextsss {
+    padding: 6px 12px; 
+  }
+  .buttonss {
+    gap: 176px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header2 {
+    font-size: 14px; 
+  }
+
+  .body-image {
+    width: 120px; 
+  }
+
+  .nextsss {
+    padding: 4px 10px; 
+  }
+  .buttonss {
+    gap: 176px;
+  }
+}

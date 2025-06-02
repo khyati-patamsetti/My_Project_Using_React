@@ -1,0 +1,253 @@
+body{
+  background-color: black;
+}
+.auth-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 1;
+  padding: 20px; 
+}
+.form-content form{
+  margin-left: 0px;
+}
+.form-content {
+  background-color: rgba(14, 14, 14, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  z-index: 2;
+  padding: 30px; 
+}
+
+.input-group {
+  margin-bottom: 15px;
+  padding: 10px; 
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.input-group input { 
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-content:hover{
+  box-shadow: 0 0 50px #55E6A5;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-group input:hover{
+  box-shadow: 0 0 10px #55E6A5;
+}
+.auth-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.auth-container button:hover {
+  background-color: white;
+  color: black;
+}
+.link {
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+.msg {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.auth-container h2{
+  color: white;
+}
+.auth-container p{
+  font-size: 14px;
+  padding: 10px;
+  color: white;
+}
+@media screen and (max-width: 320px) {
+  body{
+    background-color: black;
+  }
+  .auth-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1;
+  }
+  .form-content {
+    background-color: rgba(14, 14, 14, 0.9); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 175px;
+    z-index: 2;
+  }
+  .form-content:hover{
+    box-shadow: 0 0 50px #55E6A5;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .input-group {
+    margin-bottom: 15px;
+  }
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+  }
+  .input-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .input-group input:hover{
+    box-shadow: 0 0 10px #55E6A5;
+  }
+  .auth-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .auth-container button:hover {
+    background-color: white;
+    color: black;
+  }
+  .link {
+    color: white;
+    cursor: pointer;
+  }
+  .msg {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .link:hover {
+    text-decoration: underline;
+  }
+  .auth-container h2{
+    color: white;
+  }
+  .auth-container p{
+    color: white;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body{
+    background-color: black;
+  }
+  .auth-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1;
+  }
+  .form-content {
+    background-color: rgba(14, 14, 14, 0.9); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    z-index: 2;
+  }
+  .form-content:hover{
+    box-shadow: 0 0 50px #55E6A5;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .input-group {
+    margin-bottom: 15px;
+  }
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+  }
+  .input-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .input-group input:hover{
+    box-shadow: 0 0 10px #55E6A5;
+  }
+  .auth-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .auth-container button:hover {
+    background-color: white;
+    color: black;
+  }
+  .link {
+    color: white;
+    cursor: pointer;
+  }
+  .msg {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .link:hover {
+    text-decoration: underline;
+  }
+  .auth-container h2{
+    color: white;
+  }
+  .auth-container p{
+    color: white;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .form-content {
+    width: 75%;
+    padding: 25px;
+  }
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+  }
+  .auth-container h2 {
+    font-size: 1.5rem;
+  }
+  .auth-container button {
+    padding: 10px;
+  }
+} 

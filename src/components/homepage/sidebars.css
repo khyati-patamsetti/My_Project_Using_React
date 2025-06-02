@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Londrina+Sketch&display=swap');
+ *{ 
+   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.home {
+  padding-top: 7.2%; 
+  overflow: hidden; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  position: fixed;  
+  top: 0;        
+  left: 0;        
+  height: 20%;  
+  width: 100%;
+  background-color: #0A1019; 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+.fit-track {
+  font-size: 35px;
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+ font-style: normal;
+}
+.togg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  z-index: 1000;
+}
+.bar {
+  width: 100%;
+  height: 5px;
+  background-color:white;
+  margin: 3px 0;
+  transition: all 0.5s ease;
+}
+.change:nth-child(1) {
+ transform: rotate(45deg) translate(7px, 7px);
+}
+.change:nth-child(2) {
+  opacity: 0;
+}
+.change:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px; 
+  width: 300px;
+  height: 100%;
+  background-color: #0A1019;
+  color: white;
+  padding: 20px;
+  z-index: 1000;  
+  transition: left 0.5s ease-in-out;
+}
+.sidebar.open {
+  left: 0;
+}
+.sidebar p {
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sidebar p:hover {
+  color: #55E6A5;
+}
+.dropDown1 {
+  position: relative;
+  margin-top: 20px;
+}
+.dropDown1 button {
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #55E6A5;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.dropDown1 button:hover {
+  background-color: transparent;
+  color: #55E6A5;
+  border: 1px solid #55E6A5;
+}
+.arrowIcon1 {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+.dropDown1:hover .arrowIcon1 {
+  transform: rotate(180deg);
+}
+.content1 {
+  font-size: 18px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  border: 1px solid #55E6A5;
+  border-radius: 5px;
+}
+.content1 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.content1 a:hover {
+  background-color: #55E6A5;
+  color: #0A1019;
+}
+.dropDown1:hover .content1 {
+  display: block;
+} 
+
+
+

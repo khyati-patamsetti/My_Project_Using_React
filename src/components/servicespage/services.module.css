@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.servMain {
+    height: 100vh;
+    width: 100%;
+    background-color: #0A1019;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    padding-top: 20vh;
+}
+.servMain p {
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #55E6A5;
+    margin-bottom: 40px; 
+}
+.servcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 20px; 
+    gap: 40px; 
+    cursor: pointer;
+}
+.cardss {
+    height: 300px; 
+    width: 250px;
+    background-color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 0px 15px #55E6A5;
+}
+.cardss:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px #55E6A5;
+}
+.cardss img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.cardss p {
+    font-size: 18px;
+    text-align: justify;
+    color: #0A1019;
+}
+.cardss:hover .cardFront {
+    transform: rotateY(-180deg);
+}
+.cardss:hover .cardBack {
+    transform: rotateY(0deg);
+}
+.cardFront, .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    transition: transform 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+.cardFront p {
+    font-size: 25px;
+    margin-top: 10px;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    text-align: center;
+}
+.cardBack {
+    margin-top: -10px;
+    background-color: #55E6A5;
+    background-image: url(../images/Image-3.png);
+    transform: rotateY(180deg);
+}
+.cardBack img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.cardBack p {
+    margin-top: 16px;
+    font-size: 16px;
+    text-align: center;
+    color: #0A1019;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 1024px) {
+    .servMain{
+        height: auto;
+    }
+}

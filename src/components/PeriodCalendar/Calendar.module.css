@@ -1,0 +1,139 @@
+/* Calendar.module.css */
+.maincal {
+    padding: 25px;
+    background-color: black;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Calendarhighlight {
+    background-color: #ff8a65 !important;
+    color: black !important;
+    border-radius: 10px;
+    border: 4px solid #f4f4f9 !important;
+    padding: 5px;
+}
+
+.maincal h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.CalendarnextCycle {
+    background-color: #4caf50 !important;
+    color: white !important;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.cycleMessage {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.label {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+}
+
+.confirmButton, .cancelButton {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.confirmButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.cancelButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.input {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80px;
+    display: inline-block;
+}
+
+.getStartedButton {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.getStartedButton:hover {
+    background-color: #0056b3;
+}
+
+.react-calendar__tile {
+    max-width: 100%;
+    padding: 10px 6.6667px;
+    background: none;
+    text-align: center;
+    font: inherit;
+    font-size: 0.833em;
+    color: black;
+}
+
+.react-calendar__tile--now {
+    background-color: #f0f0f0 !important;
+    color: #333 !important;
+    font-weight: bold;
+    border-radius: 10px;
+}
