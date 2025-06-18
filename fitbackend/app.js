@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');  
 const Routes = require('./routes/Routes.js'); 
 const app = express();
-mongoose.connect("mongodb+srv://khyatipatamsetti09:khyati123@cluster0.tbpk2.mongodb.net/")
+mongoose.connect(process.env.MONGODB_URI)
   .then(result => {
     console.log("Connected successfully");
   })
